@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder1\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\materialdesignicons.ttf" />
+    <None Remove="Fonts\Montserrat-Medium.ttf" />
+    <None Remove="Fonts\Nunito-Light.ttf" />
+    <None Remove="Fonts\Nunito-Regular.ttf" />
+    <None Remove="Fonts\Nunito-SemiBold.ttf" />
+    <None Remove="Resources2\Fonts\moregular.otf" />
+    <None Remove="Resources2\Fonts\mrregular.otf" />
+    <None Remove="Resources2\Fonts\msregular.otf" />
+    <None Remove="Resources2\Fonts\mttregular.otf" />
+    <None Remove="Resources\Fonts\moregular.otf" />
+    <None Remove="Resources\Fonts\mrregular.otf" />
+    <None Remove="Resources\Fonts\msregular.otf" />
+    <None Remove="Resources\Fonts\mttregular.otf" />
+    <None Remove="ViewModels\MainPageViewModel.cs~RFfd6815e.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Fonts\materialdesignicons.ttf" />
+    <EmbeddedResource Include="Fonts\Montserrat-Medium.ttf" />
+    <EmbeddedResource Include="Fonts\Nunito-Light.ttf" />
+    <EmbeddedResource Include="Fonts\Nunito-Regular.ttf" />
+    <EmbeddedResource Include="Fonts\Nunito-SemiBold.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\moregular.otf" />
+    <EmbeddedResource Include="Resources\Fonts\mrregular.otf" />
+    <EmbeddedResource Include="Resources\Fonts\msregular.otf" />
+    <EmbeddedResource Include="Resources\Fonts\mttregular.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CardsView" Version="2.7.8" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />  
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources2\Fonts\moregular.otf" />
+    <Resource Include="Resources2\Fonts\mrregular.otf" />
+    <Resource Include="Resources2\Fonts\msregular.otf" />
+    <Resource Include="Resources2\Fonts\mttregular.otf" />
+    <Resource Include="Resources\Fonts\moregular.otf" />
+    <Resource Include="Resources\Fonts\mrregular.otf" />
+    <Resource Include="Resources\Fonts\msregular.otf" />
+    <Resource Include="Resources\Fonts\mttregular.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
